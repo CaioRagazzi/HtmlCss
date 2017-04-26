@@ -15,13 +15,14 @@ body {
 h2 {
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     font-size: 30px;
+    clear: both;
 }
 p {
     text-align: justify;
     font-size: 120%;
     margin: 20px 0;
 }
-.citacoes {
+blockquote {
     margin: 20px 40px;
     background-color: #D9E5E3;
     padding: 20px;
@@ -29,10 +30,19 @@ p {
     width:250px;
     box-sizing: border-box;
 }
+cite{
+    float: right;
+    font-style: italic;
+    display: block;
+}
 .navegacao-site {
     background-color: #3C1D3D;
     color: #F2FFFC;
     text-align: center;
+    float: right;
+    clear: right;
+    width: 15%;
+    
 }
 aside a{
     color: inherit;
@@ -46,8 +56,13 @@ aside h1{
     display: inline-block;
 }
 .rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: black;
     color: #F2FFFC;
+    clear: both;
 }
 a {
     color: #851944;
@@ -86,11 +101,35 @@ nav a{
     text-indent: -99999px;
 }
 .github{
-    background-image: url(github.png)
+    background-image: url(../img/github.png)
 }
 .twitter{
-    background-image: url(twitter.png)
+    background-image: url(../img/twitter.png)
 }
 .linkedin{
-    background-image: url(linkedin.png)
+    background-image: url(../img/linkedin.png)
+}
+.fiat{
+    float: right;
+}
+.petrobras{
+    float: left;
+}
+main {
+    float: left;
+    width: 85%;
+}
+.minha-foto {
+    box-sizing: border-box;
+    border: 10px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.navegacao-site {
+    box-sizing: border-box;
+    border: 10px solid black;
+    width: 15%;
+    position: relative;
+    top: 310px;
 }
